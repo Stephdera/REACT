@@ -70,3 +70,19 @@ button:disabled {
   cursor: auto;
   color: #cccccc;
 }
+
+form .user input[type="text"]{
+   width: 40%;
+   padding: 0.5rem;
+   background-color: bisque;
+   margin-bottom: 1rem;
+}
+
+form .password input[type="password"]{
+     width: 40%;
+     padding: 0.5rem;
+     background-color: bisque ;
+     outline: none;
+     border-radius: 10px;
+}
+

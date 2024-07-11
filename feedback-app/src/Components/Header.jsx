@@ -2,6 +2,7 @@
 
 
 import React from 'react'
+import { Link } from "react-router-dom"
 
 function Header() {
   return (
@@ -12,10 +13,16 @@ function Header() {
             </div>
             <div className="navbar">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
                     <li>Contact Us</li>
-                    <li>Login</li>
+                    <li>
+                        <Link to="/login">Login</Link>
+                    </li>
                     <li>SignUp</li>
                 </ul>
             </div>

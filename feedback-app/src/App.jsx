@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Header from "./Components/Header";
 import FeedbackList from "./Components/FeedbackList";
 import FeedbackData from "./data/FeedbackData";
 import FeedbackForm from "./Components/FeedbackForm";
+import FeedbackLogin from "./pages/FeedbackLogin";
+import AboutPage from "./pages/AboutPage";
 
 
 
@@ -43,8 +46,12 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <FeedbackForm 
+       <Router>
+       <Header/>
+       <Routes>
+        <Route path="/" element={
+          <>
+               <FeedbackForm 
         editFeedback={editFeedback} 
         feedbackform_prop={feedback} 
         updateFeedbackHandler={updateFeedbackHandler} 
@@ -55,6 +62,14 @@ function App() {
         feedbacklist_prop={feedback} 
         deleteFeedbackHandler={deleteFeedbackHandler} 
       />
+          </>
+        } />
+
+       <Route path="/about" element={<AboutPage/>}/>
+       <Route path="/login" element={<FeedbackLogin/>}/>
+
+       </Routes>
+       </Router>
       
     </>
   )

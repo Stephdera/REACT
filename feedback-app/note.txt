@@ -1,0 +1,7 @@
+npm create vite
+name project
+select framework
+select language
+cd project
+npm install
+npm run dev

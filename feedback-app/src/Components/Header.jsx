@@ -19,11 +19,15 @@ function Header() {
                     <li>
                         <Link to="/about">About</Link>
                     </li>
-                    <li>Contact Us</li>
+                    <li>
+                        <Link to="/contact" >Contact Us</Link>
+                    </li>
                     <li>
                         <Link to="/login">Login</Link>
                     </li>
-                    <li>SignUp</li>
+                    <li>
+                        <Link to="/signup">Sign Up</Link>
+                    </li>
                 </ul>
             </div>
         </div>

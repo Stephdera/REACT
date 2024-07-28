@@ -6,6 +6,8 @@ import FeedbackData from "./data/FeedbackData";
 import FeedbackForm from "./Components/FeedbackForm";
 import FeedbackLogin from "./pages/FeedbackLogin";
 import AboutPage from "./pages/AboutPage";
+import FeedbackSignUp from "./pages/FeedbackSignUp";
+import FeedbackContact from "./pages/FeedbackContact";
 
 
 
@@ -67,6 +69,8 @@ function App() {
 
        <Route path="/about" element={<AboutPage/>}/>
        <Route path="/login" element={<FeedbackLogin/>}/>
+       <Route path="/signup" element={<FeedbackSignUp/>} />
+       <Route path="/contact" element={<FeedbackContact/>}/>
 
        </Routes>
        </Router>

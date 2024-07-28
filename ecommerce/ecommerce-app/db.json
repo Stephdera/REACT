@@ -1,0 +1,112 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "Nike 1",
+            "price": 300,
+            "img": "/img/white shoe.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 2,
+            "name": "Nike 2",
+            "price": 130,
+            "img": "/img/ash nike.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 3,
+            "name": "Nike 3",
+            "price": 190,
+            "img": "/img/blue handbag.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 4,
+            "name": "Nike 4",
+            "price": 240,
+            "img": "/img/pink handbag.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 5,
+            "name": "Adidas 1",
+            "price": 150,
+            "img": "/img/handbag3.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 6,
+            "name": "Adidas 2",
+            "price": 280,
+            "img": "/img/pink nike.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 7,
+            "name": "Adidas 3",
+            "price": 270,
+            "img": "/img/grayjumpsuit.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 8,
+            "name": "Adidas 4",
+            "price": 190,
+            "img": "/img/green nike.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 9,
+            "name": "Reebok 1",
+            "price": 320,
+            "img": "/img/greengown.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 10,
+            "name": "Reebok 2",
+            "price": 230,
+            "img": "/img/red nike.jpg",
+            "featured": true,
+            "topSelling": false,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 11,
+            "name": "Reebok 3",
+            "price": 250,
+            "img": "/img/red sneakers.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        },
+        {
+            "id": 12,
+            "name": "Reebok 4",
+            "price": 170,
+            "img": "/img/blue heels.jpg",
+            "featured": false,
+            "topSelling": true,
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
+        }
+    ]
+}

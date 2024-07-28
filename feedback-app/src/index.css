@@ -72,17 +72,111 @@ button:disabled {
 }
 
 form .user input[type="text"]{
-   width: 40%;
-   padding: 0.5rem;
-   background-color: bisque;
+   width: 100%;
+   padding: 0.8rem;
+   background-color: whitesmoke;
    margin-bottom: 1rem;
 }
 
 form .password input[type="password"]{
-     width: 40%;
-     padding: 0.5rem;
-     background-color: bisque ;
+     width: 100%;
+     padding: 0.8rem;
+     background-color: whitesmoke;
      outline: none;
      border-radius: 10px;
 }
+form .password div{
+  display: block;
+}
+form .user div{
+  display: block;
+}
+/* about page */
+.line1{
+  border-bottom: 1px solid burlywood;
+  width: 5%;
+  margin-top: 4px;
+  margin-left: 36rem;
+}
 
+.line2{
+  border-bottom: 1px solid burlywood; 
+ width: 16%;
+ margin-top: 4px;
+ margin-left: 32rem;
+}
+
+.state p{
+  font-size: xx-large;
+  font-family: sans-serif;
+  color: #333;
+}
+.state h5{
+  color: gray;
+}
+.banner .teams h1{
+   padding: 0.3rem 1rem;
+   border-radius: 30px;
+}
+.banner .circle{
+  padding: 8rem;
+}
+.banner p{
+   width: 50%;
+}
+
+
+.sign form input[type="text"],
+.sign form input[type="email"],
+.sign form select,
+.sign form input[type="tel"],
+.sign form input[type="file"],
+.sign form input[type="password"]{
+  width: 100%;
+  padding: 0.8rem;
+  background-color:gray;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+}
+.sign form input[type="date"]{
+  width: 100%;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 10px;
+  background-color:gray;
+}
+
+.sign form div{
+  display: block;
+  padding: 1rem;
+}
+
+.contact form input[type="text"],
+.contact form input[type="tel"],
+.contact form input[type="email"]{
+  width: 100%;
+  padding: 1rem;
+  background-color:white;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+}
+.contact form div {
+  display: block;
+  padding: 1rem;
+}
+.contact form textarea{
+   padding: 2rem 4rem;
+   border-radius: 10px;
+   outline: none;
+   /* text-align: start; */
+}
+.contact i{
+  font-size: 30px;
+  color: green;
+}
+.contact h5{
+  font-size: large;
+  font-weight: bold;
+}

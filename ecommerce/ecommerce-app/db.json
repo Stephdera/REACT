@@ -5,6 +5,17 @@
             "name": "Nike 1",
             "price": 300,
             "img": "/img/white shoe.jpg",
+            "images": [
+                {
+                    "img":"/img/white shoe.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/red nike.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -14,6 +25,17 @@
             "name": "Nike 2",
             "price": 130,
             "img": "/img/ash nike.jpg",
+            "images": [
+                {
+                    "img":"/img/white shoe.jpg"
+                },
+                {
+                    "img":"/img/green nike.jpg"
+                },
+                {
+                    "img":"/img/red sneakers.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -23,6 +45,17 @@
             "name": "Nike 3",
             "price": 190,
             "img": "/img/blue handbag.jpg",
+            "images": [
+                {
+                    "img":"/img/blue handbag.jpg"
+                },
+                {
+                    "img":"/img/handbag3.jpg"
+                },
+                {
+                    "img":"/img/pink handbag.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -32,6 +65,17 @@
             "name": "Nike 4",
             "price": 240,
             "img": "/img/pink handbag.jpg",
+            "images": [
+                {
+                    "img":"/img/pink handbag.jpg"
+                },
+                {
+                    "img":"/img/blue handbag.jpg"
+                },
+                {
+                    "img":"/img/handbag3.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -41,6 +85,17 @@
             "name": "Adidas 1",
             "price": 150,
             "img": "/img/handbag3.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -50,6 +105,17 @@
             "name": "Adidas 2",
             "price": 280,
             "img": "/img/pink nike.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -59,6 +125,17 @@
             "name": "Adidas 3",
             "price": 270,
             "img": "/img/grayjumpsuit.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -68,6 +145,17 @@
             "name": "Adidas 4",
             "price": 190,
             "img": "/img/green nike.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -77,6 +165,17 @@
             "name": "Reebok 1",
             "price": 320,
             "img": "/img/greengown.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -86,6 +185,17 @@
             "name": "Reebok 2",
             "price": 230,
             "img": "/img/red nike.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": true,
             "topSelling": false,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -95,6 +205,17 @@
             "name": "Reebok 3",
             "price": 250,
             "img": "/img/red sneakers.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."
@@ -104,6 +225,17 @@
             "name": "Reebok 4",
             "price": 170,
             "img": "/img/blue heels.jpg",
+            "images": [
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                },
+                {
+                    "img":"/img/ash nike.jpg"
+                }
+            ],
             "featured": false,
             "topSelling": true,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias suscipit ratione ab beatae quas."

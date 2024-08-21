@@ -1,12 +1,12 @@
-
-
-import React from 'react'
+import React, { useContext } from 'react'
 import Container from './shared/Container'
 import FeedbackItem from './FeedbackItem'
 import Card from './shared/Card'
+import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackList({feedbacklist_prop, deleteFeedbackHandler, editFeedbackHandler}) {
-  if (!feedbacklist_prop || feedbacklist_prop.length === 0 ) {
+function FeedbackList() {
+  const {editFeedbackHandler, feedback, deleteFeedbackHandler} = useContext(FeedbackContext)
+  if (!feedback || feedback.length === 0 ) {
     return (
         <Container>
               <Card>
@@ -18,7 +18,7 @@ function FeedbackList({feedbacklist_prop, deleteFeedbackHandler, editFeedbackHan
   return (
     <>
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" >
-            { feedbacklist_prop.map((items, index)=> (
+            {feedback.map((items, index)=> (
                 <FeedbackItem 
                   key={index} 
                   feedbackitem_prop={items} 

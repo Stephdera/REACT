@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import EcomContext from '../../context/EcomContext';
 
 function ProductCheckOut() {
+    const { cartItems, calculateTotalAmount } = useContext(EcomContext);
   return (
     <div>
          <div className='container max-w-6xl p-3 mx-auto my-24'>
@@ -18,22 +20,16 @@ function ProductCheckOut() {
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>Product 1</td>
+                            {cartItems.map((items, index) => (
+                                <tr key={index}>
+                                <td>{items.name}</td>
                                 <td className='flex align-center justify-center'>
-                                    <img src="/img/red nike.jpg" width="50px" alt="" />
+                                    <img src={items.img} width="50px" alt="" />
                                 </td>
-                                <td>67</td>
-                                <td>#647675</td>
+                                <td>{items.quantity}</td>
+                                <td>#{items.amount}</td>
                             </tr>
-                            <tr>
-                                <td>Product 2</td>
-                                <td className='flex align-center justify-center'>
-                                    <img src="/img/red sneakers.jpg" width="50px" alt="" />
-                                </td>
-                                <td>60</td>
-                                <td>#647670</td>
-                            </tr>
+                            ))}
                         </tbody>
                     </table>
                     <table>
@@ -46,7 +42,7 @@ function ProductCheckOut() {
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td className=''>Total: # 4657.098</td>
+                                <td className=''>Total: #{calculateTotalAmount().toFixed(2)}</td>
                             </tr>
                         </tbody>
                     </table>

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Card from './shared/Card';
+import FeedbackContext from '../context/FeedbackContext';
 
-function FeedbackItem({ feedbackitem_prop, deleteFeedbackHandler, editFeedbackHandler }) {
+function FeedbackItem({ feedbackitem_prop }) {
+    const {deleteFeedbackHandler, editFeedbackHandler} = useContext(FeedbackContext);
   return (
     <>
         <Card>

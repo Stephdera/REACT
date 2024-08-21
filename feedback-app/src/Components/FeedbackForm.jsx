@@ -1,14 +1,16 @@
-import React, { useEffect }  from 'react'
+import React, { useContext, useEffect }  from 'react'
 import Container from './shared/Container';
 import Card from './shared/Card';
 import FeedbackStats from './FeedbackStats';
 import Button from './shared/Button';
 import SelectRated from './SelectRated';
 import { useState } from 'react';
+import FeedbackContext from '../context/FeedbackContext';
 
 
 
-function FeedbackForm({ feedbackform_prop, addFeedbackHandler, updateFeedbackHandler, editFeedback }) {
+function FeedbackForm() {
+    const {editFeedback, updateFeedbackHandler, addFeedbackHandler} = useContext(FeedbackContext);
     const [description, setDescription] = useState("");
     const [rating, setRating] = useState(5);
     const [message, setMessage] = useState("");
@@ -73,7 +75,7 @@ function FeedbackForm({ feedbackform_prop, addFeedbackHandler, updateFeedbackHan
                     </Card>
                  </div>
                  <div>
-                    <FeedbackStats Feedbackstats_prop={feedbackform_prop}/>
+                    <FeedbackStats/>
                  </div>
           </Container>
     </div>

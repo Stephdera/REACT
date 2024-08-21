@@ -6,7 +6,7 @@ function ProductItem({product_item_prop}) {
     <div>
         <div>
             <div className="p-3 bg-[#fff] card">
-                <img src={product_item_prop.img} alt="" />
+                <img src={`http://localhost:3000/${product_item_prop.images[0].img}`} alt="" />
                 <div className="card-body">
                     <h2 className='text-xl font-bold uppercase pt-3 pb-3'>{product_item_prop.name}</h2>
                     <h5 className='text-xl font-bold uppercase pt-3 pb-3'>#{product_item_prop.price}</h5>

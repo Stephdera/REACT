@@ -8,6 +8,7 @@ function useAlert () {
     })
 
     const showHide = (type, message) => {
+        console.log("showhide", type, message);
         setAlertInfo({ show: true, type, message});
 
         setTimeout(() => {

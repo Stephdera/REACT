@@ -1,5 +1,6 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
 import useAlert from "../hooks/useAlert";
+import AuthContext from "./AuthContext";
 
 
 const EcomContext = createContext()
@@ -8,14 +9,16 @@ export const EcomProvider = ({ children }) => {
   const [product, setProduct] = useState([]);
   const { alertInfo, showHide} = useAlert();
   const [ cartItems, setCartItems ] = useState([]);
+  const [ state, dispatch] = useContext(AuthContext);
+  const isAuthenticated = state.accessToken !== null;
 
-  useEffect( () => {
-    fetchData()
+  useEffect(() => {
+    fetchData();
   }, [])
 
   const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/product");
+        const response = await fetch("http://localhost:3000/api/product");
         const data = await response.json();
         setProduct(data);
       } catch (error) {
@@ -25,29 +28,27 @@ export const EcomProvider = ({ children }) => {
   const featuredProduct = product.filter((product) => product.featured === true)
   const topSellingProduct = product.filter((product) => product.topSelling === true)
 
-//   adding items to cart
-
-   const addToCart = (product) => {
-      const existingItems = cartItems.findIndex(items => items.id === product.id);
-
+   //   adding items to cart
+   const addToCart = (prod) => {
+      const existingItems = cartItems.findIndex(items => items.id === prod.id);
       if (existingItems !== -1) {
          const itemsInCart = [...cartItems]
-         const updateCartItems = itemsInCart[existingItems]
-         updateCartItems.quantity += Number(product.quantity)
-         updateCartItems.amount = Number(itemsInCart.price * itemsInCart.quantity)
+         const updateCartItem = itemsInCart[existingItems]
+         updateCartItem.quantity += Number(prod.quantity)
+         updateCartItem.amount = Number(updateCartItem.price * updateCartItem.quantity)
          setCartItems(itemsInCart)
-         showHide("error", `${product.name} already exist in your cart..`)
+         showHide("error", `${prod.name} already exist in your cart..`)
       }else {
         setCartItems([
             ...cartItems,
-            {...product, amount: product.price * product.quantity}
+            { ...prod, amount: prod.price * prod.quantity }
         ])
-        showHide("success", `${product.name} successfully added to cart`)
+        showHide("success", `${prod.name} successfully added to cart`)
       }
     //   setCartItems([...cartItems, existingItems])
    }
 
-//    calculate subtotal
+    //    calculate subtotal
      const calculateSubTotal = () => {
         return cartItems.reduce((acc, curr) => acc + curr.amount , 0)
      }
@@ -75,15 +76,16 @@ export const EcomProvider = ({ children }) => {
     }
 
     // update cart items
-
     const updateCartItems = (id, newQuantity) => {
         const existingItems = cartItems.findIndex(items => items.id === id);
         const itemsInCart = [...cartItems]
-        const updateCartItems = itemsInCart[existingItems]
-        updateCartItems.quantity = Number(newQuantity)
-        updateCartItems.amount = updateCartItems.price * updateCartItems.quantity
+        const updateCartItem = itemsInCart[existingItems]
+        updateCartItem.quantity = parseInt(newQuantity, 10)
+        updateCartItem.amount = updateCartItem.price * updateCartItem.quantity
         setCartItems(itemsInCart)
     }
+
+    
 
   return (
     <EcomContext.Provider value= {{
@@ -92,6 +94,8 @@ export const EcomProvider = ({ children }) => {
         cartItems,
         featuredProduct,
         topSellingProduct,
+        isAuthenticated,
+        showHide,
         addToCart,
         calculateSubTotal,
         calculateVat,

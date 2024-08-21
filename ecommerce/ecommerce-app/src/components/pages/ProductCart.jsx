@@ -23,8 +23,8 @@ function ProductCart() {
                                     <tr key={index}>
                                     <td>{items.name}</td>
                                     <td className='flex align-center justify-center'><img src={items.img} width="50px" alt="" /></td>
-                                    <td>#{items.price}</td>
-                                    <td>#{items.amount.toFixed(2)}</td>
+                                    <td>${items.price}</td>
+                                    <td>${items.amount.toFixed(2)}</td>
                                     <td>
                                         <input type="number" onChange={(e) => updateCartItems(items.id, e.target.value)} min={1} value={items.quantity} id="" />
                                     </td>
@@ -47,7 +47,7 @@ function ProductCart() {
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td className=''>Subtotal: #{calculateSubTotal().toFixed(2)}</td>
+                                    <td className=''>Subtotal: ${calculateSubTotal().toFixed(2)}</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -57,7 +57,7 @@ function ProductCart() {
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td className=''>VAT (7.5%): #{calculateVat().toFixed(2)}</td>
+                                    <td className=''>VAT (7.5%): ${calculateVat().toFixed(2)}</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -67,7 +67,7 @@ function ProductCart() {
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td className=''>Total: #{calculateTotalAmount().toFixed(2)}</td>
+                                    <td className=''>Total: ${calculateTotalAmount().toFixed(2)}</td>
                                 </tr>
                                 <tr>
                                     <td></td>
